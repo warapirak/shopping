@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping Girls</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/app.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <section data-role="page" data-title="Weclome" id="home">
+            <header data-role="header">
+                <h1>ยินดีต้อนรับเข้าสู่ระบบ</h1>
+            </header>
+            <div data-role="content" >
+                <p class="plink"><img src="images/logo_shopping.png" alt=""/></p>
+                <p class="plink"><a href="#main-menu" data-role="button" data-inline="true" 
+                                    data-icon="grid" data-iconpos="notext"></a>
+                <a href="#login" data-role="button" data-inline="true" 
+                                    data-icon="lock" data-iconpos="notext"></a>               
+                <a href="hellophp.php" data-role="button" data-inline="true" 
+                                    data-icon="info" data-iconpos="notext"></a></p>                                    
+            </div>
+            <footer data-role="footer" data-position="fixed">
+                <h3>&copy;2015 Chongchit</h3>
+            </footer>
+        </section>
+
+        <section data-role="page" id="main-menu" data-title="Page MainMenu">
+            <header data-role="header">
+                <h1>Main Menu</h1>
+                <a href="" data-rel="back" data-role="button"  data-icon="back" data-iconpos="notext"></a>
+                <a href="#main-menu" data-role="button" data-icon="grid" data-iconpos="notext" ></a>              
+            </header>
+            <div data-role="content">
+                <!--<div data-role="controlgroup" class="ui-block-a"> -->
+                <div class="ui-grid-b">
+                    <div class="ui-block-a"></div>
+                    <div data-role="controlgroup" class="ui-block-b">
+                        <p class="plink"><a href="product.html#shop-list" rel="external" data-role="button" 
+                                            data-icon="shop">Our Products</a></p>   
+                        <p class="plink"><a href="#form1" data-rel="dialog" data-role="button" 
+                                            data-icon="shop">สมัครสมาชิก</a></p>         
+                        <p class="plink"><a href="#abous-us" data-rel="dialog" data-transition="flip" data-role="button" 
+                                            data-icon="heart">Abous Us</a></p> 
+                        <p class="plink"><a href="#app-detail" data-rel="dialog" data-role="button" 
+                                            data-icon="shop">App Detail</a></p>
+                       <p class="plink"><a href="#member-list"  data-role="button" 
+                                            data-icon="user">Member List</a></p>                                            
+
+                    </div>
+                    <div class="ui-block-c"></div>
+                </div>
+            </div>
+            <footer data-role="footer">
+                <h3>&copy;2015 Chongchit</h3>
+            </footer>
+        </section>
+
+        <section data-role="dialog" id="app-detail">
+            <header data-role="header">
+                <h1>APP Detail</h1>       
+                <a href="#home" data-role="button" 
+                   data-icon="home" data-iconpos="notext" >home</a> 
+                <a href="#main-menu" data-role="button"  
+                   data-icon="grid" data-iconpos="notext" >Menu</a> 
+            </header>
+            <div data-role="content">
+                <p class="plink">บริการให้คำปรึกษาและคำแนะนำด้านแฟชั่น เครื่องแต่งกาย ให้สอดคล้องกับบุคลิกภาพ รสนิยม อาชีพ และการใช้ชีวิตประจำวัน
+
+                    ทั้งสุภาพสตรีและสุภาพบุรุษ จากผู้มีประสบการณ์ด้านแฟชั่นและทีมงานมืออาชีพ พร้อมคัดสรรสิ่งที่ดีที่สุดและตรงใจคุณในทุกโอกาสพิเศษ และให้คำแนะนำเกี่ยวกับเสื้อผ้า การแต่งหน้า ทรงผม รวมถึงการเลือกใช้กระเป๋า รองเท้า และเครื่องประดับต่างๆ ติดต่อขอรับบริการได้ โดยไม่คิดค่าบริการที่ห้อง Personal Shopper ชั้น 2 เซ็นทรัล ชิดลม โดยสามารถนัดหมายล่วงหน้าได้ที่แผนกลูกค้าสัมพันธ์ โทร. 0 2793 7775</p>
+            </div>
+            <footer data-role="footer">
+                <h3>&copy;2015 Chongchit</h3>
+            </footer>
+        </section>
+
+        <section data-role="page" id="abous-us">
+            <header data-role="header">
+                <h1>Abous Us</h1>       
+                <a href="#home" data-role="button"  
+                   data-icon="home" data-iconpos="notext" ></a> 
+                <a href="#main-menu" data-role="button" data-iconpos="notext"
+                   data-icon="grid" ></a> 
+            </header>
+            <div data-role="content">
+                <p class="plink">This is developed by Chongchit</p>
+                <!-- <div class="ui-body ui-body-a ui-corner-all">
+                    <h3>Abous Us</h3>  
+                    <p>ที่อยู่ :การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย
+                        53 หมู่ 2 ถ.จรัญสนิทวงศ์ ต.บางกรวย
+                        อ.บางกรวย จ.นนทบุรี 11130
+                        address mail: chongchit.s@egat.co.th </p>
+                </div>
+                     <h3 class="ui-bar-a ui-corner-all" >Abous Us</h3>  
+                      <div class="ui-body ui-body-a ui-corner-all">
+                          <p>address mail chongchit.s@egat.co.th </p>
+                      </div>
+                  </div>-->
+                <div class="ui-corner-all custom-corners">
+                    <div class="ui-bar ui-bar-a" >
+                        <h3>Abous Us</h3>  
+                        <div class="ui-body ui-body-a" >
+                            <p>ที่อยู่ :การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย
+                                53 หมู่ 2 ถ.จรัญสนิทวงศ์ ต.บางกรวย
+                                อ.บางกรวย จ.นนทบุรี 11130</p>
+                            <p>E-Mail: chongchit.s@egat.co.th </p>
+                            <p>โทร :0-2730-7777      </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <footer data-role="footer">
+                    <h3>&copy;2015 Chongchit</h3>
+                </footer>
+        </section>
+
+        <!-- page form register-->
+        <section data-role="page" id="form1" data-title="Page Register">
+            <header data-role="header">
+                <h1>สมัครสมาชิก</h1>
+
+            </header>
+            <div data-role="content">
+                <form>
+                    <div class="ui-field-contain">
+                        <label>ชื่อ: </label>
+                        <input type="text" placeholder="Name" data-clear-btn="true">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label>นามสกุล: </label>
+                        <input type="text" data-clear-btn="true">
+                    </div>
+                    <div class="ui-field-contain">
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+                            <legend>เพศ:</legend> 
+
+                            <input type="radio" name= "rd1" id="rd1">
+                            <label for="rd1">ชาย</label>
+
+                            <input type="radio" name= "rd1" id="rd2" >
+                            <label for="rd2">หญิง</label>
+                        </fieldset>
+                    </div>
+                    <div class="ui-field-contain">
+                        <label>วันเกิด: </label>
+                        <input type="date"  data-clear-btn="true">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label>Age: </label>
+                        <input type="number" min="20" max="60">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label>phone: </label>
+                        <input type="tel" placeholder="phone" data-clear-btn="true">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label>E-Mail: </label>
+                        <input type="email" placeholder="email" data-clear-btn="true">
+                    </div>
+                    <div class="ui-field-contain">
+                        <fieldset data-role="controlgroup" data-type="horizontal" >
+                            <button type="submit" data-icon="check">Send</button>
+                            <button type="reset" data-icon="delete">Cancel</button>
+                        </fieldset>
+                    </div>
+                </form>
+
+            </div>
+            <footer data-role="footer">
+                <h3>&copy;2015 Chongchit</h3>
+            </footer>
+        </section>
+        <!-- Page  -->
+        <section data-role="page" id="login" data-title="Page MainMenu">
+            <header data-role="header" data-add-back-btn="true">
+                <h1>Login</h1>
+            </header>
+            <div data-role="content">
+                <form>
+                    <div class="ui-field-contain">
+                        <label>Username: </label>
+                        <input type="text" placeholder="ชื่อผู้ใช้"  >
+                    </div>
+                    <div class="ui-field-contain">
+                        <label>Password </label>
+                        <input type="password" placeholder="รหัสผ่าน" data-clear-btn="true">
+                    </div>
+                    <div class="ui-field-contain">
+                        <fieldset data-role="controlgroup" data-type="horizontal" >
+                            <button type="submit" data-icon="check">Send</button>
+                            <button type="reset" data-icon="delete">Cancel</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+            <footer data-role="footer">
+                <h3>&copy;2015 Chongchit</h3>
+            </footer>
+        </section>
+        <!--Page #member -->
+          <section data-role="page" id="member-list" data-title="Page member">
+            <header data-role="header" >
+                <h1>Shopping Girls  Member List</h1>
+                     <a href="#home" data-role="button" data-inline="true" 
+                   data-icon="home" data-iconpos="notext" ></a> 
+                    <a href="#main-menu" data-role="button" data-inline="true" 
+                   data-icon="grid" data-iconpos="notext" ></a> 
+            </header>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true" id="member-view">
+                    <li data-icon="carat-r">
+                        <a>A</a>
+                    </li>
+                    <li data-icon="carat-r">
+                       <a>B</a>
+                    </li>
+                </ul>
+            </div>
+            <footer data-role="footer">
+                <h3>&copy;2015 Chongchit</h3>
+            </footer>
+        </section>
+<!--          Page #member -->       
+          <section data-role="page" id="dd" data-title="Page member">
+            <header data-role="header" >
+                <h1>Shopping Girls</h1>
+            </header>
+            <div data-role="content">
+              
+                
+            </div>
+            <footer data-role="footer">
+                <h3>&copy;2015 Chongchit</h3>
+            </footer>
+        </section>
+<!--    java script check Page memeber-list ถูกเปิดหรือไม่ -->   
+        <script type="text/javascript">
+            var serviceURL = "http://10.20.93.70/shopping_service/member.php";
+            var serviceURL2 = "http://10.20.93.70/shopping_service/member_get.php";
+            var shoptype;
+            $("#member-list").on('pageinit',function(event){
+                //alert("hello");
+            //$.getJSON(serviceURL,function(event){
+               // $("#member-view li").remove();
+                //shoptype=data.items;
+                  //  });
+            });
+            
+            $(document).on('pageshow',"#member-list",function(){
+                $.getJSON(serviceURL,function(data){
+                $("#member-view li").remove();
+                shoptype = data.items;
+                $.each(shoptype,function(index,shop){
+                    //alert(shop.firstname);
+                    $("#member-view").append("<li><a href='shopping_member.html?id="+shop.id+"'>"+shop.firstname+"</a></li>");
+                });
+                $("#member-view").listview('refresh');
+                //alert(shoptype);
+                  });
+             });
+             
+              $(document).on('pageshow',"#member-detail",function(){//#member-detail from shopping_member.html
+                  var id=getUrlVars()["id"];
+                  $.getJSON(serviceURL2+"?id="+id,function(data){
+                    var a=data.items;
+                    $.each(a,function(index,val){
+                        $("#sp1").html(val.surname);                      
+                  });           
+        //alert('id');
+                 }); 
+              });
+             
+             function getUrlVars() {
+                var vars = [], hash;
+                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                for (var i = 0; i < hashes.length; i++)
+                {
+                    hash = hashes[i].split('=');
+                    vars.push(hash[0]);
+                    vars[hash[0]] = hash[1];
+                }
+                return vars;
+            }
+        </script>
+    </body>
+</html>
